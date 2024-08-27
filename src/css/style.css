@@ -7,14 +7,38 @@ body {
     background: url(../images/bg-desktop.svg) center no-repeat;
     background-color: var(--bg-color);
     height: 100vh;
+    margin: 30px;
 }
 
 .logo{
-    width: 100%;
+    width: 15%;
 }
 
 main{
     display: flex;
+}
+
+.ilustration{
+    display: flex;
+    margin-top: 40px;
+    min-width: 709px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 90px;
+    max-width: 500px;
+}
+
+.information h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.information p{
+    margin-top: 20px;
 }
 
 .information .button{
@@ -22,13 +46,15 @@ main{
     width: 30%;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    padding: 26px 64px;
-    margin-top: 35px;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 28px;
+    margin-top: 20px;
     color: var(--bg-color);
+    background-color: #fff;
+    width: 30%;
+    text-align: center;
+    padding: 10px 80px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .information .button:hover{
@@ -39,30 +65,30 @@ main{
 
 .social{
     display: flex;
-    margin-top: 180px;
+    margin-top: 120px;
     justify-content: end;
 }
 
 .social .circulo{
     display: flex;
-    width: 70px;
-    height: 70px;
-    border: #fff solid 3px;
+    width: 35px;
+    height: 35px;
+    border: #fff solid 1px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    margin-left: 28px;
+    margin-left: 16px;
     transition: 0.3s;
 }
 
 .social .circulo a {
-    font-size: 27px;
+    font-size: 14px;
     color: #fff;
     transition: 0.3s;
 }
 
 .social .circulo:hover {
-    border: var(--primary-soft) solid 3px;
+    border: var(--primary-soft) solid 1px;
 }
 
 .social .circulo:hover a {
@@ -70,5 +96,5 @@ main{
 }
 
 .social .circulo .insta {
-    font-size: 34px;
+    font-size: 18px;
 }
