@@ -6,8 +6,10 @@ body {
     color: #fff;
     background: url(../images/bg-desktop.svg) center no-repeat;
     background-color: var(--bg-color);
-    height: 100vh;
+    background-size: cover;
+    min-height: 100vh;
     margin: 40px;
+    overflow: hidden;
 }
 
 .logo{
@@ -18,30 +20,32 @@ main{
     display: flex;
 }
 
-.ilustration{
+.container {
     display: flex;
-    margin-top: 40px;
-    min-width: 709px;
+    flex-direction: row;
+    margin-top: 40px;   
 }
 
-.information{
+.container .ilustration{
+    min-width: 500px;
+}
+
+.container .information{
     display: flex;
     flex-direction: column;
     margin-left: 40px;
-    margin-top: 90px;
-    max-width: 500px;
 }
 
-.information h1{
+.container .information h1{
     font-size: 38px;
     font-weight: 600;
 }
 
-.information p{
+.container .information p{
     margin-top: 20px;
 }
 
-.information .button{
+.container .information .button{
     display: flex;
     width: 30%;
     justify-content: center;
@@ -57,7 +61,7 @@ main{
     font-weight: 400;
 }
 
-.information .button:hover{
+.container .information .button:hover{
     background-color: var(--primary-soft);
     color: #fff;
     transition: 0.3s;
@@ -65,7 +69,7 @@ main{
 
 .social{
     display: flex;
-    margin-top: 120px;
+    margin-top: 30px;
     justify-content: end;
 }
 
@@ -98,7 +102,7 @@ main{
 .social .circulo .insta {
     font-size: 18px;
 }
-
+/* 
 @media(max-width: 768px){
     body{
         flex-direction: column;
@@ -109,18 +113,16 @@ main{
     }
 
     .logo{
-        width: 25%;
-        margin-top: 20px;
+        width: 100%;
     }
 
     .container .ilustration{
-        margin: 40px auto;
+        margin: 400px auto;
+        min-width: 500px;
     }
 
     .container .ilustration img{
-        margin-top: 40px;
-        width: 688px;
-
+        margin-top: 40px;   
     }
 
     .container .information{
@@ -146,4 +148,4 @@ main{
         justify-content: center;
         margin: 50px auto;
     }
-}   
+}    */
