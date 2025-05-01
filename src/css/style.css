@@ -103,15 +103,8 @@ main{
     font-size: 18px;
 }
 
-@media (max-width: 1100px) {
-    .container .information h1{
-        /* color: red; */
-    }
-}
-
 @media (max-width: 1013px){
     .container .information h1{
-        /* color: blue; */
         font-size: 33px;
     }
     
@@ -123,7 +116,6 @@ main{
 
 @media (max-width: 895px){
     .container .information h1{
-        /* color: orange; */
         font-size: 28px;   
     }
 }
@@ -144,7 +136,6 @@ main{
     }
 
     .container .information h1{
-        /* color: green;  */
         font-size: 47px;
         text-align: center;
     }
