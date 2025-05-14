@@ -6,7 +6,7 @@ body {
     color: #fff;
     margin: 0 auto;
     height: 100vh;
-    max-width: 1440px;
+    max-width: 1720px;
     background: url(../images/bg-desktop.svg) no-repeat center;
     background-size: cover;
     background-color: var(--bg-color);
@@ -14,8 +14,8 @@ body {
 }
 
 .logo {
-    margin-top: 40px;
-    width: 20%;
+    margin-top: 60px;
+    width: 28%;
 }
 
 main {
@@ -25,73 +25,77 @@ main {
     position: relative;
 }
 
-main .ilustration {
-    min-width: 65%;
+main .ilustration img {
+    min-width: 1000px;
+    height: auto;
 }
 
 main .information {
     flex-direction: column;
     margin: 50px 0 50px 50px;
-    min-width: 35%;
 }
 main .information h1 {
-    font-size: 38px;
+    font-size: 60px;
     font-weight: 600;
 }
 
 main .information p {
     margin-top: 20px;
+    font-size: 22px;
 }
 
-main .information .button {
+main .information a.button {
     display: flex;
-    width: 30%;
+    width: 250px;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     color: var(--bg-color);
     background-color: #fff;
-    text-align: center;
-    padding: 15px 90px;
+    padding: 22px 140px;
     border-radius: 50px;
-    font-size: 17px;
+    font-size: 26px;
     font-weight: 400;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.349);
 }
 
-main .information .button:hover {
+main .information a.button:hover {
     background-color: var(--primary-soft);
     color: #fff;
     transition: 0.3s;
 }
 
-footer .social {
+footer ul.social {
     display: flex;  
     justify-content: end;
     position: absolute;
-    bottom: 3%;
-    right: 3%;   
+    bottom: 5%;
+    right: 100px;   
     align-items: center;
 }
 
-footer .social .circulo {
+footer ul.social li.circulo {
     display: flex;
-    width: 55px;
-    height: 55px;
-    border: #fff solid 1px;
+    width: 58px;
+    height: 58px;
+    border: #fff solid 2px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    margin-left: 16px;
+    margin-left: 24px;
     transition: 0.3s;
 }
 
-footer .social .circulo i {
+footer ul.social li.circulo i {
+    display: flex;
     font-size: 25px;
     color: #fff;
     transition: 0.3s;
+    align-items: center;
+    justify-content: center;
 }
 
-footer .social .circulo:hover {
+footer ul.social li.circulo:hover i {
     border: var(--primary-soft) solid 1px;
 }
 
