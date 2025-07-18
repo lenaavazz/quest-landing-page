@@ -4,57 +4,68 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: #fff;
-    margin: 0 auto;
-    height: 100vh;
-    max-width: 1720px;
+    min-height: 100vh;
     background: url(../images/bg-desktop.svg) no-repeat center;
     background-size: cover;
     background-color: var(--bg-color);
-    /* overflow: hidden; */
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
-    margin-top: 60px;
-    width: 28%;
+    margin: 30px 0 0 0;
+    max-width: 200px;
 }
 
 main {
     display: flex;
     flex-direction: row;
-    margin-top: 40px; 
-    position: relative;
 }
 
-main .ilustration img {
-    min-width: 1000px;
-    height: auto;
+main .ilustration{
+    width: 700px;
+    margin: 50px 0 0 0;
 }
 
 main .information {
+    margin: 100px 0 0 60px;
+    max-width: 550px; 
+    height: 350px;  
+    display: flex;
     flex-direction: column;
-    margin: 50px 0 50px 50px;
 }
+
 main .information h1 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 main .information p {
-    margin-top: 20px;
-    font-size: 22px;
+    margin-top: 20px;   
+    font-size: 18px;
+    font-weight: 300;
 }
 
 main .information a.button {
     display: flex;
-    width: 250px;
+    width: 210px;
     justify-content: center;
     margin-top: 30px;
     color: var(--bg-color);
     background-color: #fff;
-    padding: 22px 140px;
+    padding: 15px 50px;
     border-radius: 50px;
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     align-items: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.349);
 }
@@ -65,19 +76,19 @@ main .information a.button:hover {
     transition: 0.3s;
 }
 
+footer {
+    display: flex;
+    justify-content: end;
+}
+
 footer ul.social {
     display: flex;  
-    justify-content: end;
-    position: absolute;
-    bottom: 5%;
-    right: 100px;   
-    align-items: center;
 }
 
 footer ul.social li.circulo {
     display: flex;
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
     border: #fff solid 2px;
     border-radius: 50%;
     align-items: center;
@@ -88,7 +99,7 @@ footer ul.social li.circulo {
 
 footer ul.social li.circulo i {
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     transition: 0.3s;
     align-items: center;
@@ -96,72 +107,13 @@ footer ul.social li.circulo i {
 }
 
 footer ul.social li.circulo:hover i {
-    border: var(--primary-soft) solid 1px;
-}
-
-footer .social .circulo:hover i {
     color: var(--primary-soft);
 }
 
-footer .social .circulo .insta {
+footer ul.social li.circulo:hover {
+    border: var(--primary-soft) solid 1px;
+}
+
+footer .social li.circulo .insta {
     font-size: 18px;
-}
-
-@media (max-width: 1013px) {
-    .container .information h1 {
-        font-size: 33px;
-    }
-    
-    .container .information p {
-        margin-top: 15px;
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 895px) {
-    .container .information h1 {
-        font-size: 28px;   
-    }
-}
-
-@media (max-width: 768px) {
-    body{
-        background: url(../images/bg-mobile.svg) no-repeat center;
-        background-size: 100%;
-        background-color: var(--bg-color);
-    }
-
-    .logo {
-        width: 25%;       
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .container .information h1 {
-        font-size: 47px;
-        text-align: center;
-    }
-
-    .container .information {
-        margin: 100px 0;
-    }
-
-    .container .information p {
-        text-align: center;
-        font-size: 29px;
-        margin: 20px 20px 50px 20px;
-    }
-
-    .container .information .button {
-        margin: auto;
-        padding: 20px 190px;
-    }
-
-    footer .social {
-        position: static;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
 }
