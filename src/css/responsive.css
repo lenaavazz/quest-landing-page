@@ -95,8 +95,8 @@
 
 @media (max-width: 768px){
   body{
-    background: url(../images/bg-mobile.svg) no-repeat center;
-    background-size: cover;
+    background: url(../images/bg-mobile.svg) no-repeat top;
+    background-size: contain;
     background-color: var(--bg-color);
   }
 
@@ -123,7 +123,7 @@
 
   main .information{
     max-width: 500px;
-    margin: 90px 30px 0 30px;
+    margin: 180px 30px 0 30px;
     align-items: center;
     text-align: center;
   }
@@ -139,10 +139,72 @@
   footer{
     display: flex;
     justify-content: center;
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
   }
 
   footer ul.social li.circulo{
-    margin: 0 15px 0 15px;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 425px){
+  .container{
+    max-width: 380px;
+  }
+
+  main .ilustration{
+    width: 380px;
+  }
+
+  main .information{
+    max-width: 380px;
+    height: 280px;
+    margin: 90px 35px 0 35px;
+  }
+
+  main .information h1{
+    font-size: 27px;
+  }
+
+  main .information p{
+    font-size: 15px;
+  }
+
+  main .information a.button{
+    padding: 10px 40px;
+    font-size: 13px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  footer ul.social li.circulo{
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (max-width: 375px){
+  .container{
+    max-width: 280px;
+  }
+
+  main .ilustration{
+    width: 300px;
+  }
+
+  main .information{
+    max-width: 380px;
+    margin: 50px 0 0 0;
+  }
+
+  main .information h1{
+    font-size: 20px;
+  }
+
+  main .information p{
+    font-size: 13px;
   }
 }
